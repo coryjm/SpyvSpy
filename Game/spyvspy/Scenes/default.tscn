@@ -1,0 +1,413 @@
+[gd_scene load_steps=11 format=4 uid="uid://ft5puwo3h2te"]
+
+[ext_resource type="Texture2D" uid="uid://chaysc640hsxl" path="res://Assets/dungeon_ v1.0/dungeon_ v1.0/dungeon_.png" id="1_cmypg"]
+[ext_resource type="PackedScene" uid="uid://cl267h67484yk" path="res://Scenes/player1.tscn" id="2_hj5t5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ebmjs"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxrlw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wrm1d"]
+texture = ExtResource("1_cmypg")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+1:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+1:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+12:16/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+12:17/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+10:18/0 = 0
+11:18/0 = 0
+12:18/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3dryh"]
+sources/0 = SubResource("TileSetAtlasSource_wrm1d")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wowpa"]
+texture = ExtResource("1_cmypg")
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+1:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+1:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+12:16/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+12:17/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+10:18/0 = 0
+11:18/0 = 0
+12:18/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_i6g32"]
+sources/0 = SubResource("TileSetAtlasSource_wowpa")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qxrlw"]
+size = Vector2(180.5, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrm1d"]
+size = Vector2(4, 75.5)
+
+[node name="Game" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_ebmjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 2)
+shape = SubResource("WorldBoundaryShape2D_qxrlw")
+
+[node name="Floor" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD8////AAACAA8AAAD9////AAACAA8AAAD+////AAACAA8AAAD/////AAACAA8AAAAAAP//AAACAA8AAAABAP//AAACAA8AAAACAP//AAACAA8AAAADAP//AAACAA8AAAAEAP//AAACAA8AAAAFAP//AAACAA8AAAAGAP//AAACAA8AAAAGAP7/AAACAA8AAAAFAP7/AAACAA8AAAAEAP7/AAACAA8AAAADAP7/AAACAA8AAAACAP7/AAACAA8AAAABAP7/AAACAA8AAAAAAP7/AAACAA8AAAD///7/AAACAA8AAAD+//7/AAACAA8AAAD9//7/AAACAA8AAAD8//7/AAACAA8AAAD8//3/AAACAA8AAAD9//3/AAACAA8AAAD+//3/AAACAA8AAAD///3/AAACAA8AAAAAAP3/AAACAA8AAAABAP3/AAACAA8AAAACAP3/AAACAA8AAAADAP3/AAACAA8AAAAEAP3/AAACAA8AAAAFAP3/AAACAA8AAAAGAP3/AAACAA8AAAAGAPz/AAACAA8AAAAFAPz/AAACAA8AAAAEAPz/AAACAA8AAAADAPz/AAACAA8AAAACAPz/AAACAA8AAAABAPz/AAACAA8AAAAAAPz/AAACAA8AAAD///z/AAACAA8AAAD+//z/AAACAA8AAAD9//z/AAACAA8AAAD8//z/AAACAA8AAAD8//v/AAACAA8AAAD9//v/AAACAA8AAAD+//v/AAACAA8AAAD///v/AAACAA8AAAAAAPv/AAACAA8AAAABAPv/AAACAA8AAAACAPv/AAACAA8AAAADAPv/AAACAA8AAAAEAPv/AAACAA8AAAAFAPv/AAACAA8AAAAGAPv/AAACAA8AAAD7////AAABABAAAAD7//7/AAABABAAAAD7//3/AAABABAAAAD7//z/AAABABAAAAD7//v/AAABABAAAAAHAP//AAAEABAAAAAHAP7/AAAEABAAAAAHAP3/AAAEABAAAAAHAPz/AAAEABAAAAAHAPv/AAAEABAAAAAHAAAAAAACAA8AAAAGAAAAAAACAA8AAAAHAAEAAAACAA8AAAAIAAEAAAACAA8AAAAIAAAAAAACAA8AAAAHAAIAAAACAA8AAAAIAAIAAAACAA8AAAAIAP//AAACAA8AAAAJAAAAAAACAA8AAAAJAAEAAAACAA8AAAAJAAIAAAACAA8AAAAGAAEAAAACAA8AAAA=")
+tile_set = SubResource("TileSet_3dryh")
+
+[node name="Walls2" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD7//v/AAABAAIAAAAHAPr/AAAEAAEAAAAGAPr/AAADAAEAAAAFAPr/AAADAAEAAAAEAPr/AAADAAEAAAADAPr/AAADAAEAAAACAPr/AAADAAEAAAABAPr/AAADAAEAAAAAAPr/AAADAAEAAAD///r/AAADAAEAAAD+//r/AAADAAEAAAD9//r/AAADAAEAAAD8//r/AAADAAEAAAD7//r/AAABAAEAAAD8//v/AAACAAIAAAD9//v/AAACAAIAAAD+//v/AAACAAIAAAD///v/AAACAAIAAAAAAPv/AAACAAIAAAABAPv/AAACAAIAAAACAPv/AAACAAIAAAADAPv/AAACAAIAAAAEAPv/AAACAAIAAAAFAPv/AAACAAIAAAAGAPv/AAACAAIAAAAHAPv/AAAEAAIAAAA=")
+tile_set = SubResource("TileSet_i6g32")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Walls2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls2/StaticBody2D"]
+position = Vector2(16.25, 5)
+shape = SubResource("RectangleShape2D_qxrlw")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls2/StaticBody2D"]
+position = Vector2(22.5, -75)
+shape = SubResource("RectangleShape2D_qxrlw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls2/StaticBody2D"]
+position = Vector2(-72, -37.5)
+shape = SubResource("RectangleShape2D_wrm1d")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls2/StaticBody2D"]
+position = Vector2(120, -42.75)
+shape = SubResource("RectangleShape2D_wrm1d")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_hj5t5")]
+position = Vector2(0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, -1)
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+
+[node name="Walls" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD7//3/AAABAAMAAAD7//7/AAABAAMAAAD7////AAABAAYAAAD7//z/AAABAAMAAAD8////AAACAAQAAAD9////AAACAAQAAAD+////AAACAAQAAAD/////AAACAAQAAAAAAP//AAACAAQAAAABAP//AAACAAQAAAACAP//AAACAAQAAAADAP//AAACAAQAAAAEAP//AAACAAQAAAAFAP//AAACAAQAAAAGAP//AAAHAAEAAAAHAP7/AAAEAAMAAAAHAP3/AAAEAAMAAAAHAPz/AAAEAAMAAAD7/wAAAAABAAcAAAD8/wAAAAACAAcAAAD9/wAAAAACAAcAAAD+/wAAAAACAAcAAAD//wAAAAACAAcAAAAAAAAAAAACAAcAAAABAAAAAAACAAcAAAACAAAAAAACAAcAAAADAAAAAAACAAcAAAAEAAAAAAACAAcAAAAFAAAAAAACAAcAAAAGAAAAAAAEAAcAAAAHAP//AAAFAAQAAAA=")
+tile_set = SubResource("TileSet_i6g32")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D"]
+position = Vector2(16.25, 5)
+shape = SubResource("RectangleShape2D_qxrlw")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls/StaticBody2D"]
+position = Vector2(22.5, -75)
+shape = SubResource("RectangleShape2D_qxrlw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls/StaticBody2D"]
+position = Vector2(-72, -37.5)
+shape = SubResource("RectangleShape2D_wrm1d")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls/StaticBody2D"]
+position = Vector2(120, -42.75)
+shape = SubResource("RectangleShape2D_wrm1d")

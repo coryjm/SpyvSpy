@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://r024htq7vdgi"]
+
+[ext_resource type="Texture2D" uid="uid://cva1btk068f7a" path="res://Assets/Environment/Structures/Buildings/Floors.png" id="1_m0qdj"]
+[ext_resource type="Texture2D" uid="uid://kgfox75huore" path="res://Assets/Environment/Structures/Buildings/Shadows.png" id="2_wilhi"]
+[ext_resource type="Texture2D" uid="uid://ve1m38a7iu2o" path="res://Assets/Environment/Structures/Buildings/Walls.png" id="3_qqkiy"]
+[ext_resource type="Texture2D" uid="uid://45p76b8jgi7y" path="res://Assets/Environment/Props/Static/Shadows.png" id="4_w8bfy"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n5301"]
+texture = ExtResource("1_m0qdj")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hsum2"]
+texture = ExtResource("2_wilhi")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6youu"]
+texture = ExtResource("3_qqkiy")
+15:36/0 = 0
+15:36/0/terrain_set = 0
+15:36/0/terrain = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uyqe"]
+texture = ExtResource("4_w8bfy")
+
+[resource]
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Background"
+terrain_set_0/terrain_0/color = Color(0.149545, 0.381984, 0.677793, 1)
+sources/0 = SubResource("TileSetAtlasSource_n5301")
+sources/1 = SubResource("TileSetAtlasSource_hsum2")
+sources/2 = SubResource("TileSetAtlasSource_6youu")
+sources/3 = SubResource("TileSetAtlasSource_3uyqe")

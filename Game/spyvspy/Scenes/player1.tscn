@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cl267h67484yk"]
+[gd_scene load_steps=33 format=3 uid="uid://cl267h67484yk"]
 
 [ext_resource type="Texture2D" uid="uid://dvtbsgkdhs2n" path="res://Assets/camelot_ [version 1.0]/camelot_ [version 1.0]/arthurPendragon_.png" id="1_n6hdu"]
 [ext_resource type="Script" uid="uid://do1y7jtpqdnmv" path="res://Scripts/player_1.gd" id="1_ndhuy"]
@@ -96,6 +96,22 @@ atlas = ExtResource("1_n6hdu")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8r7uw"]
+atlas = ExtResource("1_n6hdu")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbvl2"]
+atlas = ExtResource("1_n6hdu")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkyw2"]
+atlas = ExtResource("1_n6hdu")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxcf3"]
+atlas = ExtResource("1_n6hdu")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2iqc"]
 atlas = ExtResource("1_n6hdu")
 region = Rect2(32, 64, 32, 32)
 
@@ -212,6 +228,23 @@ animations = [{
 "loop": true,
 "name": &"jump right",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbvl2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkyw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxcf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2iqc")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_n6hdu"]
@@ -223,8 +256,9 @@ script = ExtResource("1_ndhuy")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_nbvl2")
-animation = &"down right"
+animation = &"walk_right"
 autoplay = "idle right"
+frame_progress = 0.113178
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
